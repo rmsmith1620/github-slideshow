@@ -1,13 +1,36 @@
----
-layout: presentation
----
-
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Homepage</title>
+  </head>
+  <body>
+    <h1>SheCodes</h1>
+    <ul>
+      <li>
+        <a href="https://www.shecodes.io/students" target="_blank"> Coders </a>
+      </li>
+      <li>
+        <a href="https://www.shecodes.io/workshops" target="_blank">
+          Courses
+        </a>
+      </li>
+      <li>
+        <a href="https://www.shecodes.io/stories" target="_blank"> Stories </a>
+      </li>
+    </ul>
+    <hr />
+    <p>
+      <strong> More info </strong>
+      <br />
+      <br />
+      <img
+        src="https://ieeecs-media.computer.org/wp-media/2018/04/11222506/woman-coding-in-lab-min.jpeg"
+        alt="Woman Coding"
+        width="400"
+      />
+    </p>
+  </body>
+</html>
